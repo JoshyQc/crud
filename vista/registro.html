@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Registrar Usuario</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/estilosLogin.css"/>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Registrate en nuestro fabuloso website:</h1>
+        </header> 
+
+        <form action="../instancias/registrar-usuario.php" method="post">
+
+            <hr />
+            <h3>Crea una cuenta</h3>
+
+            <!--Nombre Usuario-->
+            <label for="nombre">Nombre de Usuario:</label><br>
+            <input type="text" name="username" maxlength="32" required>
+            <br/><br/>
+
+            <!--Password-->
+            <label for="pass">Password:</label><br>
+            <input type="password" name="password" maxlength="8" required>
+
+            <br/><br/>
+            <button class="button" style="vertical-align: auto" type="submit" name="submit" value="Registrarme"><span>Registrarme</span></button>
+            <button class="button" style="vertical-align: auto" type="reset" name="clear" value="Borrar"><span>Borrar Campos</span></button>
+
+        </form>
+        <hr /><br />
+
+        <footer>
+            &copy;2018 <a href="/crudFinal/index.html">Inicio</a>
+        </footer> 
+
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="css/estilosLogin.css"/>
+        <meta charset = "utf-8">
+    </head>
+
+    <body>
+
+        <h1>Login de Usuarios</h1>
+        <hr />
+
+        <form action="/crudFinal/instancias/checklogin.php" method="post" >
+
+            <label>Nombre Usuario:</label><br>
+            <input name="username" type="text" id="username" required>
+            <br><br>
+
+            <label>Password:</label><br>
+            <input name="password" type="password" id="password" required>
+            <br><br>
+
+            <input id="iniciar" type="submit" value="LOGIN" />
+
+        </form>
+
+                <form action="/crudFinal/vista/registro.html">
+                    <input id="iniciar" type="submit" value="Registrarme" />
+                </form>
+        <hr />
+
+
+        <footer>
+            &copy;2018 
+        </footer>
+
+    </body>
+</html>
